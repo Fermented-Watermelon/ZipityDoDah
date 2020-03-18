@@ -44,6 +44,12 @@
           });
         }
       }
+      
+      $('#inputGroupFile01').on('change', function () {
+      var fileName = $(this).val().replace('C:\\fakepath\\', " ");
+      $(this).next('.custom-file-label').html(fileName);
+      })
+      
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script> 
